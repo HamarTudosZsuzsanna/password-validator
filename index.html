@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <h1>password validator</h1>
+    <div id="content" class="content">
+        <div class="mode">
+            <img width="30" height="30" src="https://img.icons8.com/pulsar-color/48/moon-symbol.png" alt="moon-symbol" id="dark-mode"/>
+        </div>
+        <form action="">
+            <label for="username">Felhasználónév *</label>
+            <input type="text" name="username" placeholder="minta123" required>
+            <label for="name">Név *</label>
+            <input type="text" name="name" placeholder="Minta Béla" required>
+            <label for="email">E-mail cím *</label>
+            <input type="email" name="email" placeholder="minta@minta.hu" required>
+
+            <label for="pwd">Jelszó *</label>
+            <div class="password-container">
+            
+              <input type="password" name="pwd" id="pwd" placeholder="">
+              <img width="20" height="20" src="https://img.icons8.com/pulsar-color/48/visible.png" 
+                   alt="visible" class="visible-eye" id="togglePwd"/>
+                <button id="pwd-generator">erős jelszó</button>
+            </div>
+
+            <div class="rules">
+              <div class="rule">
+                <img width="30" height="30" src="https://img.icons8.com/pulsar-color/48/x-coordinate.png" id="character"/>
+                <div>Minimum 8 karakter hosszú</div>
+              </div>
+              <div class="rule">
+                <img width="30" height="30" src="https://img.icons8.com/pulsar-color/48/x-coordinate.png" id="spec"/>
+                <div>Minimum 1 speciális karakter (@!%_*/)</div>
+              </div>
+              <div class="rule">
+                <img width="30" height="30" src="https://img.icons8.com/pulsar-color/48/x-coordinate.png" id="num"/>
+                <div>Minimum 1 szám (0 - 9)</div>
+              </div>
+              <div class="rule">
+                <img width="30" height="30" src="https://img.icons8.com/pulsar-color/48/x-coordinate.png" id="uppercase"/>
+                <div>Minimum 1 nagybetű (A - Z)</div>
+              </div>
+            </div>
+            <button type="submit" id="submit">Regisztráció</button>
+          </form>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
